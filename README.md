@@ -50,12 +50,12 @@ If you would like to quickly get started, skim the template.m file, most things 
 > Example: Data = ImportOscData(TestName, Channels, Data, dest);
 - PlotOscTime(TestName, Channels, ChannelNo, Data, PlotOptions, dest)
 > Saves a .fig plot of the Voltage (V) against Time (s) graph for the specified ChannelNo under a 
-> folder of name plots in directory dest with the Name-Value arguments stored in the PlotOptions class
+> folder of name plots in directory dest with the plot properties stored in the PlotOptions class
 > Channels should be an array with the data's channel numbers inside
 > also see PlotOptions Class
 - PlotOscXY(TestName, Channels, ChannelNoX, ChannelNoY, Data, PlotOptions, dest)
 > Saves a .fig plot of the Voltage (V) against Voltage (V) graph for the 2 specified Channel numbers under
-> a folder of name plots in directory dest with the Name-Value arguments stored in the PlotOptions class
+> a folder of name plots in directory dest with the plot properties stored in the PlotOptions class
 > Channels should be an array with the data's channel numbers inside
 > also see PlotOptions Class
 ## Classes
@@ -63,6 +63,9 @@ If you would like to quickly get started, skim the template.m file, most things 
 > Class to store Name-Value arguments for MATLAB plotting
 > The properties are named the same as the default argument names
 > All of the arguments exist except for MarkerIndicies, DatetimeTickFormat and DurationTickFormat
+> Grid options are also available, major lines are on by default
+> The grid options are changed via PlotOptions.grid, the value 'major' enables major grid lines
+> The value 'minor' enables both major and minor grid lines, and other value will remove grid lines e.g. 'off'
 > These are listed below, with their default (same as MATLAB) values:
 
 > Color = '#0072BD';
@@ -75,3 +78,4 @@ If you would like to quickly get started, skim the template.m file, most things 
 > xlabel = 'Default';
 > ylabel = 'Default';
 > title = 'Default';
+> plot = 'major';
