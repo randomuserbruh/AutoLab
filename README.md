@@ -9,27 +9,27 @@ Although designed with the R&S RTB2000 in mind, it may be compatible with other 
 template.m is a template script file with some brief descriptions  
 The other files are functions and class, make sure to add the folder with these inside to your MATLAB path
 
-**TODO:**
+**TODO:**  
 Handle multiple tests  
 Marker Indices  
 Plot across different tests  
 
-**Future Additions:**
+**Future Additions:**  
 SCPI Implementation with Easy Remote Commands  
 More Devices  
 
-***Why not use SCPI now?***
+***Why not use SCPI now?***  
 Using SCPI requires non-trivial setup and dependencies unlike just using MATLAB and without careful implementation
 becomes more difficult to use than I would like  
 AutoLab is meant to be as fast and simple to setup and use as possible, perhaps to the detriment of functionality
 That being said, for more specific tasks it should be relatively easy to reconfigure
 
-***Will the TODO and Future Additions be added?***
+***Will the TODO and Future Additions be added?***  
 Probably, but not for a while  
 Most other devices require SCPI, but I want the user to have a much easier experience than standard SCPI provides  
 The TODO changes are easy to manually work around, and I'd rather work on moving toward some sort of backend SCPI
 
-***Not working?***
+***Not working?***  
 Check Github for any bug fixes / updates  
 Hopefully, most errors should be simple to fix
 ## Quick Start
