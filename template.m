@@ -26,6 +26,9 @@ PO = PlotOptions;
 % PO.Color = '#000000'; will make the color of the plot black
 % All of the name value arguments exist except for MarkerIndicies
 % DatetimeTickFormat and DurationTickFormat
+% Grid options can be changed with PlotOptions.grid
+% The value 'major' (default) enables major grid lines, 'minor' enables major and minor grid lines
+% Any other value will remove grid lines
 
 Data = {};
 
