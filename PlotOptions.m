@@ -7,6 +7,7 @@ classdef PlotOptions
         MarkerEdgeColor = 'auto';
         MarkerFaceColor = 'none';
         MarkerSize = 6;
+        grid = 'Major';
         xlabel = 'Default';
         ylabel = 'Default';
         title = 'Default';
