@@ -3,6 +3,8 @@
 ***v 0.1.1***  
 [**GitHub**](https://github.com/zceechu/AutoLab)
 
+Might add quick winforms soon, would also solve matlab path issue as I can move the data with C# instead
+
 AutoLab only requires vanilla MATLAB and a wired data connection to the oscilloscope  
 Although designed with the R&S RTB2000 in mind, it may be compatible with other R&S oscilloscopes
 
