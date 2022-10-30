@@ -30,6 +30,12 @@ function PlotOscXY(TestName, Channels, ChannelNoX, ChannelNoY, Data, PlotOptions
     else
         title(PlotOptions.title)
     end
+    if strcmp(PlotOptions.grid, 'major') == 1
+        grid on;
+    elseif strcmp(PlotOptions.grid, 'minor') == 1
+        grid on;
+        grid minor;
+    end
     TestNameDashed = regexprep(TestName,'\s', '-');
     filename = strcat(TestNameDashed,'-xyplot-CH', int2str(ChannelNoX),'-', int2str(ChannelNoY));
     saveas(gcf,filename);

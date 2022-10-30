@@ -6,6 +6,8 @@ function SaveOscData(TestName, Channels, oscdir, dest)
     mkdir(TestName);
     cd(TestName);
     testhome = cd;
+    oldpath = path;         %sus
+    path(oldpath, 'oscdir');    %sus
     cd(oscdir);
     cd 'Live Data';       % Hi
     cd Channel;
@@ -14,4 +16,5 @@ function SaveOscData(TestName, Channels, oscdir, dest)
         copyfile(strcat('CH', index, '.csv'), testhome);
     end 
     cd(home);
+    path = oldpath;
 end
